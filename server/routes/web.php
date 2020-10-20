@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/calcs/{aa}/{rr}/{ee}', 'CalcsController@show');
+Route::get('/calcs/{num1}/{operator}/{num2}', 'CalcsController@show');

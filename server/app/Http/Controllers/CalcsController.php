@@ -9,20 +9,20 @@ use Illuminate\Routing\Controller as BaseController;
 
 class CalcsController extends Controller
 {
-    public function show($i1, $op, $i2)
+    public function show($num1, $operator, $num2)
     {
-        switch ($op) {
+        switch ($operator) {
             case 'addition':
-                $answer = $i1 + $i2;
+                $answer = $num1 + $num2;
                 break;
             case 'subtraction':
-                $answer = $i1 - $i2;
+                $answer = $num1 - $num2;
                 break;
             case 'multiplication':
-                $answer = $i1 * $i2;
+                $answer = $num1 * $num2;
                 break;
             case 'division':
-                $answer = $i1 / $i2;
+                $answer = $num1 / $num2;
                 break;
             default:
                 $answer = "演算子を入れてください";
